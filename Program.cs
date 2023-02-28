@@ -63,10 +63,6 @@ builder.Services.AddSingleton(s =>
 // </create_container>
 
 
-
-
-
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
