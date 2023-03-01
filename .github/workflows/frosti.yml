@@ -31,6 +31,7 @@ jobs:
         run: |
             az --version
             az account show
+            az account list
             brew update
             brew install CirroBuild/tap/frosti
             myAppNames=`frosti provision -s 1d740c3e-34fe-4b65-a870-76db75e929f9 -r github -e ppe -n testbrew | grep -E 'WebAppName|FunctionAppName'`
